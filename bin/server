@@ -4,9 +4,7 @@ var app = require('../app'),
 
 app.set('port', process.env.PORT || 8081);
 
-console.log ('env is ' + process.env);
-
-var server = app.listen(process.env.PORT || 8081, function() {
+var server = app.listen(app.get('port'), function() {
   // the callback is added as a listener for the server's 'listen' event
   // see: http://nodejs.org/api/net.html#net_server_listen_path_callback
 
