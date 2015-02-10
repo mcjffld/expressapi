@@ -8,7 +8,7 @@
     "service"
   ],
   "private": true,
-  "main": "app.js",
+  "main": "./bin/server.js",
   "scripts": {
     "start": "node ./bin/server",
     "debug": "DEBUG=app node ./bin/server",
